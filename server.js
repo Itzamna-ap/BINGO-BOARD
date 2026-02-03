@@ -39,25 +39,24 @@ function getLocalIP() {
 }
 
 function generateBingoCard() {
-    const card = [];
+    const card = [[], [], [], [], []]; // 5 Columns
     const usedNumbers = new Set();
-    const cols = 5;
-    const rows = 5;
 
-    // B (1-10), I (11-20), N (21-30), G (31-40), O (41-50)
-    for (let col = 0; col < cols; col++) {
-        const min = col * 10 + 1;
-        const max = min + 9;
-        const colNums = [];
+    // Generate pool of numbers 1-50
+    const pool = Array.from({ length: 50 }, (_, i) => i + 1);
 
-        while (colNums.length < rows) {
-            const num = Math.floor(Math.random() * (max - min + 1)) + min;
-            if (!usedNumbers.has(num)) {
-                usedNumbers.add(num);
-                colNums.push(num);
-            }
+    // Fisher-Yates shuffle
+    for (let i = pool.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [pool[i], pool[j]] = [pool[j], pool[i]];
+    }
+
+    // Fill columns
+    let count = 0;
+    for (let col = 0; col < 5; col++) {
+        for (let row = 0; row < 5; row++) {
+            card[col][row] = pool[count++];
         }
-        card.push(colNums); // Store as columns
     }
 
     // Set FREE space
