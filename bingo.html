@@ -1748,11 +1748,11 @@
 
             bingoOverlay.classList.add('show');
 
-            const titleElement = bingoOverlay.querySelector('h2');
+            const subtitleElement = bingoOverlay.querySelector('.bingo-subtitle');
             if (winnerName) {
-                titleElement.innerHTML = `ยินดีด้วย! <br> <span style="font-size: 0.7em; color: var(--gold);">${winnerName}</span><br>BINGO!`;
+                subtitleElement.innerHTML = `🎊 ยินดีด้วย! คุณ <span style="color: var(--gold); font-size: 1.2em;">${winnerName}</span><br>ชนะแล้ว! 🎊`;
             } else {
-                titleElement.textContent = 'BINGO!';
+                subtitleElement.textContent = '🎊 ยินดีด้วย! มีผู้ชนะ! 🎊';
             }
         }
         bingoCloseBtn.addEventListener('click', () => {
