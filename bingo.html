@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="th">
 
 <head>
@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>๐ฑ BINGO Board - เธเธฃเธฐเธเธฒเธจเน€เธฅเธเธเธดเธเนเธ</title>
+    <title>🎱 BINGO Board - ประกาศเลขบิงโก</title>
     <style>
         /* ===== CSS Variables ===== */
         :root {
@@ -1076,40 +1076,40 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <span class="logo-icon">๐ฑ</span>
+            <span class="logo-icon">🎱</span>
             <h1>BINGO BOARD</h1>
         </div>
         <div class="controls">
             <div class="input-group">
-                <label>เธเธฃเธญเธเน€เธฅเธ:</label>
+                <label>กรอกเลข:</label>
                 <input type="number" id="numberInput" min="1" max="50" placeholder="1-50" autocomplete="off">
                 <button class="btn btn-primary" id="announceBtn">
-                    <span>๐“ข</span> เธเธฃเธฐเธเธฒเธจ
+                    <span>📢</span> ประกาศ
                 </button>
             </div>
             <button class="btn btn-sound" id="soundBtn">
-                <span>๐”</span> เน€เธชเธตเธขเธ
+                <span>🔊</span> เสียง
             </button>
             <button class="btn btn-bingo" id="bingoBtn">
-                <span>๐</span> BINGO!
+                <span>🎉</span> BINGO!
             </button>
             <button class="btn btn-secondary" id="undoBtn">
-                <span>โฉ๏ธ</span> เธขเธเน€เธฅเธดเธ
+                <span>↩️</span> ยกเลิก
             </button>
             <button class="btn btn-secondary" id="autoDrawBtn">
-                <span>๐ฒ</span> เธชเธธเนเธกเน€เธฅเธ
+                <span>🎲</span> สุ่มเลข
             </button>
             <button class="btn btn-secondary" id="helpBtn">
-                <span>โ“</span> เธงเธดเธเธตเน€เธฅเนเธ
+                <span>❓</span> วิธีเล่น
             </button>
             <button class="btn btn-secondary" id="qrBtn">
-                <span>๐“ฑ</span> QR Code
+                <span>📱</span> QR Code
             </button>
             <button class="btn btn-secondary" id="fullscreenBtn">
-                <span>๐”ณ</span> เน€เธ•เนเธกเธเธญ
+                <span>🔳</span> เต็มจอ
             </button>
             <button class="btn btn-danger" id="resetBtn">
-                <span>๐”</span> เธฃเธตเน€เธเนเธ•
+                <span>🔄</span> รีเซ็ต
             </button>
         </div>
     </header>
@@ -1133,7 +1133,7 @@
             <!-- Player Panel -->
             <div class="player-panel">
                 <div class="history-header">
-                    <span class="history-title">๐‘ฅ เธเธนเนเน€เธฅเนเธ</span>
+                    <span class="history-title">👥 ผู้เล่น</span>
                     <span class="history-count" id="playerCount">0</span>
                 </div>
                 <div class="player-list" id="playerList">
@@ -1144,7 +1144,7 @@
             <!-- History Panel -->
             <div class="history-panel">
                 <div class="history-header">
-                    <span class="history-title">๐“ เธเธฃเธฐเธงเธฑเธ•เธดเธเธฒเธฃเธเธฃเธฐเธเธฒเธจ</span>
+                    <span class="history-title">📋 ประวัติการประกาศ</span>
                     <span class="history-count" id="historyCount">0 / 50</span>
                 </div>
                 <div class="history-numbers" id="historyNumbers">
@@ -1160,18 +1160,18 @@
     <!-- BINGO Celebration Overlay -->
     <div class="bingo-overlay" id="bingoOverlay">
         <div class="bingo-text">BINGO!</div>
-        <div class="bingo-subtitle">๐ เธขเธดเธเธ”เธตเธ”เนเธงเธข! เธกเธตเธเธนเนเธเธเธฐ! ๐</div>
-        <button class="bingo-close-btn" id="bingoCloseBtn">เธเธดเธ”</button>
+        <div class="bingo-subtitle">🎊 ยินดีด้วย! มีผู้ชนะ! 🎊</div>
+        <button class="bingo-close-btn" id="bingoCloseBtn">ปิด</button>
     </div>
 
     <!-- Custom Modal -->
     <div class="modal-overlay" id="resetModal">
         <div class="modal-box">
-            <div class="modal-title">๐” เธฃเธตเน€เธเนเธ•เน€เธเธก</div>
-            <div class="modal-message">เธ•เนเธญเธเธเธฒเธฃเธฃเธตเน€เธเนเธ•เนเธฅเธฐเน€เธฃเธดเนเธกเน€เธเธกเนเธซเธกเนเธซเธฃเธทเธญเนเธกเน?</div>
+            <div class="modal-title">🔄 รีเซ็ตเกม</div>
+            <div class="modal-message">ต้องการรีเซ็ตและเริ่มเกมใหม่หรือไม่?</div>
             <div class="modal-buttons">
-                <button class="modal-btn modal-btn-cancel" id="modalCancel">เธขเธเน€เธฅเธดเธ</button>
-                <button class="modal-btn modal-btn-confirm" id="modalConfirm">เธ•เธเธฅเธ</button>
+                <button class="modal-btn modal-btn-cancel" id="modalCancel">ยกเลิก</button>
+                <button class="modal-btn modal-btn-confirm" id="modalConfirm">ตกลง</button>
             </div>
         </div>
     </div>
@@ -1179,13 +1179,13 @@
     <!-- QR Code Modal -->
     <div class="modal-overlay" id="qrModal">
         <div class="modal-box" style="max-width: 90vw;">
-            <div class="modal-title" style="font-size: 2.5rem;">๐“ฑ เธชเนเธเธเน€เธเธทเนเธญเน€เธเนเธฒเธฃเนเธงเธกเน€เธเธก</div>
+            <div class="modal-title" style="font-size: 2.5rem;">📱 สแกนเพื่อเข้าร่วมเกม</div>
             <div class="qr-image" id="qrImage">
                 <!-- QR Code here -->
             </div>
             <div class="qr-url" id="qrUrl">Loading...</div>
             <div class="modal-buttons">
-                <button class="modal-btn modal-btn-cancel" id="qrCloseBtn">เธเธดเธ”</button>
+                <button class="modal-btn modal-btn-cancel" id="qrCloseBtn">ปิด</button>
             </div>
         </div>
     </div>
@@ -1193,23 +1193,23 @@
     <!-- Help Modal -->
     <div class="modal-overlay" id="helpModal">
         <div class="modal-box" style="max-width: 1000px;">
-            <div class="modal-title">๐ เธงเธดเธเธตเธเธเธฐเน€เธเธก BINGO ๐</div>
+            <div class="modal-title">🏆 วิธีชนะเกม BINGO 🏆</div>
             <div class="help-grid">
                 <div class="help-item">
                     <img src="public/win_row.svg" class="help-img" alt="Row Win">
-                    <span>เนเธเธงเธเธญเธ (Row)</span>
+                    <span>แนวนอน (Row)</span>
                 </div>
                 <div class="help-item">
                     <img src="public/win_col.svg" class="help-img" alt="Column Win">
-                    <span>เนเธเธงเธ•เธฑเนเธ (Column)</span>
+                    <span>แนวตั้ง (Column)</span>
                 </div>
                 <div class="help-item">
                     <img src="public/win_diag.svg" class="help-img" alt="Diagonal Win">
-                    <span>เนเธเธงเธ—เนเธขเธ (Diagonal)</span>
+                    <span>แนวทแยง (Diagonal)</span>
                 </div>
             </div>
             <div class="modal-buttons" style="margin-top: 30px;">
-                <button class="modal-btn modal-btn-confirm" id="helpCloseBtn">เน€เธเนเธฒเนเธเนเธฅเนเธง</button>
+                <button class="modal-btn modal-btn-confirm" id="helpCloseBtn">เข้าใจแล้ว</button>
             </div>
         </div>
     </div>
@@ -1387,7 +1387,7 @@
 
         // Create Falling Stars
         function createBingoStars() {
-            const starEmojis = ['โญ', '๐', 'โจ', '๐’ซ', '๐', '๐', '๐', '๐ฅ'];
+            const starEmojis = ['⭐', '🌟', '✨', '💫', '🎉', '🎊', '🏆', '🥇'];
 
             for (let i = 0; i < 50; i++) {
                 setTimeout(() => {
@@ -1484,7 +1484,7 @@
         function callNumber(num) {
             if (state.calledNumbers.includes(num)) {
                 playError();
-                showToast(`เน€เธฅเธ ${num} เธ–เธนเธเธเธฃเธฐเธเธฒเธจเนเธฅเนเธง!`);
+                showToast(`เลข ${num} ถูกประกาศแล้ว!`);
                 return;
             }
 
@@ -1512,7 +1512,7 @@
             createConfetti();
 
             // Show toast
-            showToast(`๐ เธเธฃเธฐเธเธฒเธจเน€เธฅเธ ${num}!`);
+            showToast(`🎉 ประกาศเลข ${num}!`);
 
             // Play celebration for milestones
             if (state.calledNumbers.length % 10 === 0) {
@@ -1549,7 +1549,7 @@
                 // Update history
                 updateHistory();
 
-                showToast(`เธขเธเน€เธฅเธดเธเน€เธฅเธ ${num}`);
+                showToast(`ยกเลิกเลข ${num}`);
             }
         }
 
@@ -1652,14 +1652,14 @@
             initAudio();
             soundEnabled = !soundEnabled;
             if (soundEnabled) {
-                soundBtn.innerHTML = '<span>๐”</span> เน€เธชเธตเธขเธ';
+                soundBtn.innerHTML = '<span>🔊</span> เสียง';
                 soundBtn.classList.remove('muted');
                 playDing();
-                showToast('๐” เน€เธเธดเธ”เน€เธชเธตเธขเธเนเธฅเนเธง');
+                showToast('🔊 เปิดเสียงแล้ว');
             } else {
-                soundBtn.innerHTML = '<span>๐”</span> เธเธดเธ”เน€เธชเธตเธขเธ';
+                soundBtn.innerHTML = '<span>🔇</span> ปิดเสียง';
                 soundBtn.classList.add('muted');
-                showToast('๐” เธเธดเธ”เน€เธชเธตเธขเธเนเธฅเนเธง');
+                showToast('🔇 ปิดเสียงแล้ว');
             }
         });
 
@@ -1673,7 +1673,7 @@
 
             const titleElement = bingoOverlay.querySelector('h2');
             if (winnerName) {
-                titleElement.innerHTML = `เธขเธดเธเธ”เธตเธ”เนเธงเธข! <br> <span style="font-size: 0.7em; color: var(--gold);">${winnerName}</span><br>BINGO!`;
+                titleElement.innerHTML = `ยินดีด้วย! <br> <span style="font-size: 0.7em; color: var(--gold);">${winnerName}</span><br>BINGO!`;
             } else {
                 titleElement.textContent = 'BINGO!';
             }
@@ -1700,7 +1700,7 @@
                 numberInput.focus();
             } else {
                 playError();
-                showToast('เธเธฃเธธเธ“เธฒเธเธฃเธญเธเน€เธฅเธ 1-50');
+                showToast('กรุณากรอกเลข 1-50');
             }
         });
 
@@ -1719,7 +1719,7 @@
                 uncallNumber(lastNum);
             } else {
                 playError();
-                showToast('เนเธกเนเธกเธตเน€เธฅเธเนเธซเนเธขเธเน€เธฅเธดเธ');
+                showToast('ไม่มีเลขให้ยกเลิก');
             }
         });
 
@@ -1729,7 +1729,7 @@
             playDing();
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen().catch(err => {
-                    showToast('เนเธกเนเธชเธฒเธกเธฒเธฃเธ–เน€เธเนเธฒเนเธซเธกเธ”เน€เธ•เนเธกเธเธญเนเธ”เน');
+                    showToast('ไม่สามารถเข้าโหมดเต็มจอได้');
                 });
             } else {
                 document.exitFullscreen();
@@ -1739,9 +1739,9 @@
         // Update fullscreen button text
         document.addEventListener('fullscreenchange', () => {
             if (document.fullscreenElement) {
-                fullscreenBtn.innerHTML = '<span>๐”ฒ</span> เธญเธญเธเธเธฒเธเน€เธ•เนเธกเธเธญ';
+                fullscreenBtn.innerHTML = '<span>🔲</span> ออกจากเต็มจอ';
             } else {
-                fullscreenBtn.innerHTML = '<span>๐”ณ</span> เน€เธ•เนเธกเธเธญ';
+                fullscreenBtn.innerHTML = '<span>🔳</span> เต็มจอ';
             }
         });
 
@@ -1750,7 +1750,7 @@
             initAudio();
             if (state.calledNumbers.length === 0) {
                 playError();
-                showToast('เธขเธฑเธเนเธกเนเธกเธตเน€เธฅเธเธ—เธตเนเธเธฃเธฐเธเธฒเธจ');
+                showToast('ยังไม่มีเลขที่ประกาศ');
                 return;
             }
             // Show custom modal
@@ -1778,7 +1778,7 @@
             // Reset history
             updateHistory();
 
-            showToast('๐” เธฃเธตเน€เธเนเธ•เน€เธฃเธตเธขเธเธฃเนเธญเธข!');
+            showToast('🔄 รีเซ็ตเรียบร้อย!');
         });
 
         // ===== Network State =====
@@ -1804,7 +1804,7 @@
             ws.onopen = () => {
                 console.log('Connected to Server');
                 ws.send(JSON.stringify({ type: 'host_connect', payload: {} }));
-                showToast('๐ข เน€เธเธทเนเธญเธกเธ•เนเธญ Server เนเธฅเนเธง');
+                showToast('🟢 เชื่อมต่อ Server แล้ว');
             };
 
             ws.onmessage = (event) => {
@@ -1813,7 +1813,7 @@
             };
 
             ws.onclose = () => {
-                showToast('๐”ด เธ•เธฑเธ”เธเธฒเธฃเน€เธเธทเนเธญเธกเธ•เนเธญ Server');
+                showToast('🔴 ตัดการเชื่อมต่อ Server');
                 setTimeout(connectServer, 5000); // Reconnect
             };
         }
@@ -1830,7 +1830,7 @@
                     updatePlayerList(data.payload.players);
                     break;
                 case 'player_joined':
-                    showToast(`๐‘ค ${data.payload.name} เน€เธเนเธฒเธฃเนเธงเธกเน€เธเธก`);
+                    showToast(`👤 ${data.payload.name} เข้าร่วมเกม`);
                     // We need to request full list or add one. For simplicity host asks server or server sends full list.
                     // Actually server sent single join. We should have a player store.
                     addPlayerToUI({ id: data.payload.id, name: data.payload.name, bingoCount: 0 });
@@ -1839,7 +1839,7 @@
                     removePlayerFromUI(data.payload.id);
                     break;
                 case 'player_won':
-                    showToast(`๐ ${data.payload.name} Bingo!`);
+                    showToast(`🏆 ${data.payload.name} Bingo!`);
                     showBingoCelebration(data.payload.name);
                     highlightWinner(data.payload.name);
                     playBingoWin();
@@ -1904,7 +1904,7 @@
             // Check if already called locally to avoid spam
             if (state.calledNumbers.includes(num)) {
                 playError();
-                showToast(`เน€เธฅเธ ${num} เธ–เธนเธเธเธฃเธฐเธเธฒเธจเนเธฅเนเธง!`);
+                showToast(`เลข ${num} ถูกประกาศแล้ว!`);
                 return;
             }
 
@@ -1983,7 +1983,7 @@
                 item.querySelector('.badge').textContent = 'Playing';
             });
 
-            showToast('๐” เธฃเธตเน€เธเนเธ•เน€เธฃเธตเธขเธเธฃเนเธญเธข!');
+            showToast('🔄 รีเซ็ตเรียบร้อย!');
         }
 
 
@@ -2033,13 +2033,13 @@
             if (autoDrawInterval) {
                 clearInterval(autoDrawInterval);
                 autoDrawInterval = null;
-                autoDrawBtn.innerHTML = '<span>๐ฒ</span> เธชเธธเนเธกเน€เธฅเธ';
+                autoDrawBtn.innerHTML = '<span>🎲</span> สุ่มเลข';
                 autoDrawBtn.classList.remove('btn-danger');
-                showToast('เธซเธขเธธเธ”เธชเธธเนเธกเน€เธฅเธ');
+                showToast('หยุดสุ่มเลข');
             } else {
-                autoDrawBtn.innerHTML = '<span>โน๏ธ</span> เธซเธขเธธเธ”เธชเธธเนเธก';
+                autoDrawBtn.innerHTML = '<span>⏹️</span> หยุดสุ่ม';
                 autoDrawBtn.classList.add('btn-danger'); // Make it red
-                showToast('เน€เธฃเธดเนเธกเธชเธธเนเธกเน€เธฅเธเธ—เธธเธ 3 เธงเธดเธเธฒเธ—เธต');
+                showToast('เริ่มสุ่มเลขทุก 3 วินาที');
 
                 autoDrawInterval = setInterval(() => {
                     // Find a number not yet called
@@ -2051,7 +2051,7 @@
                     if (available.length === 0) {
                         clearInterval(autoDrawInterval);
                         autoDrawInterval = null;
-                        autoDrawBtn.innerHTML = '<span>๐ฒ</span> เธชเธธเนเธกเน€เธฅเธ';
+                        autoDrawBtn.innerHTML = '<span>🎲</span> สุ่มเลข';
                         return;
                     }
 
@@ -2098,4 +2098,3 @@
         numberInput.focus();
     </script>
 </body>
-
