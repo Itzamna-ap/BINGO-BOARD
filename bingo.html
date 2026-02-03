@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="th">
 
 <head>
@@ -635,21 +635,105 @@
         /* Removed explicit latest-number override to use responsive base size */
 
         /* ===== Responsive ===== */
+        /* ===== Responsive ===== */
         @media (max-width: 1200px) {
             .main-content {
                 flex-direction: column;
+                height: auto;
+                /* Allow scrolling on smaller screens */
+                overflow-y: auto;
             }
 
             .grid-container,
             .right-panel {
                 flex: none;
                 width: 100%;
-                /* Ensure full width on mobile */
+                /* Ensure full width */
+                min-height: 50vh;
+                /* Minimum height for visibility */
+            }
+
+            /* Adjust grid rows for tablet/mobile layout if needed */
+            .bingo-grid {
+                grid-template-columns: repeat(10, 1fr);
+                /* Switch to 10 cols for better horizontal fit */
+                grid-template-rows: repeat(5, 1fr);
             }
 
             .latest-number {
                 font-size: 15rem;
-                /* Smaller for mobile */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 10px 15px;
+            }
+
+            .controls {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 5px;
+                width: 100%;
+            }
+
+            .btn {
+                min-width: 80px;
+                height: 40px;
+                padding: 0 10px;
+                font-size: 0.85rem;
+            }
+
+            .logo h1 {
+                font-size: 1.5rem;
+            }
+
+            .bingo-grid {
+                grid-template-columns: repeat(5, 1fr);
+                /* Revert to 5 columns on smaller screens */
+                grid-template-rows: repeat(10, 1fr);
+                gap: 4px;
+            }
+
+            .number-cell {
+                font-size: 1.4rem;
+                height: 40px;
+                /* Fixed height ensures cells don't collapse */
+            }
+
+            .latest-number-container {
+                min-height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .input-group label {
+                display: none;
+                /* Hide label on very small screens to save space */
+            }
+
+            .input-group input {
+                width: 50px;
+            }
+
+            .btn {
+                flex: 1 1 40%;
+                /* Buttons take approx half width */
+            }
+
+            .number-cell {
+                font-size: 1.1rem;
+            }
+
+            .latest-number {
+                font-size: 8rem;
+            }
+
+            .history-item {
+                font-size: 3rem;
+                min-width: 40px;
             }
         }
 
