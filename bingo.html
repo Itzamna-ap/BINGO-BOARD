@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="th">
 
 <head>
@@ -8,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <title>🎱 BINGO Board - ประกาศเลขบิงโก</title>
+    <title>๐ฑ BINGO Board - เธเธฃเธฐเธเธฒเธจเน€เธฅเธเธเธดเธเนเธ</title>
     <style>
         /* ===== CSS Variables ===== */
         :root {
@@ -1077,40 +1076,40 @@
     <!-- Header -->
     <header class="header">
         <div class="logo">
-            <span class="logo-icon">🎱</span>
+            <span class="logo-icon">๐ฑ</span>
             <h1>BINGO BOARD</h1>
         </div>
         <div class="controls">
             <div class="input-group">
-                <label>กรอกเลข:</label>
+                <label>เธเธฃเธญเธเน€เธฅเธ:</label>
                 <input type="number" id="numberInput" min="1" max="50" placeholder="1-50" autocomplete="off">
                 <button class="btn btn-primary" id="announceBtn">
-                    <span>📢</span> ประกาศ
+                    <span>๐“ข</span> เธเธฃเธฐเธเธฒเธจ
                 </button>
             </div>
             <button class="btn btn-sound" id="soundBtn">
-                <span>🔊</span> เสียง
+                <span>๐”</span> เน€เธชเธตเธขเธ
             </button>
             <button class="btn btn-bingo" id="bingoBtn">
-                <span>🎉</span> BINGO!
+                <span>๐</span> BINGO!
             </button>
             <button class="btn btn-secondary" id="undoBtn">
-                <span>↩️</span> ยกเลิก
+                <span>โฉ๏ธ</span> เธขเธเน€เธฅเธดเธ
             </button>
             <button class="btn btn-secondary" id="autoDrawBtn">
-                <span>🎲</span> สุ่มเลข
+                <span>๐ฒ</span> เธชเธธเนเธกเน€เธฅเธ
             </button>
             <button class="btn btn-secondary" id="helpBtn">
-                <span>❓</span> วิธีเล่น
+                <span>โ“</span> เธงเธดเธเธตเน€เธฅเนเธ
             </button>
             <button class="btn btn-secondary" id="qrBtn">
-                <span>📱</span> QR Code
+                <span>๐“ฑ</span> QR Code
             </button>
             <button class="btn btn-secondary" id="fullscreenBtn">
-                <span>🔳</span> เต็มจอ
+                <span>๐”ณ</span> เน€เธ•เนเธกเธเธญ
             </button>
             <button class="btn btn-danger" id="resetBtn">
-                <span>🔄</span> รีเซ็ต
+                <span>๐”</span> เธฃเธตเน€เธเนเธ•
             </button>
         </div>
     </header>
@@ -1134,7 +1133,7 @@
             <!-- Player Panel -->
             <div class="player-panel">
                 <div class="history-header">
-                    <span class="history-title">👥 ผู้เล่น</span>
+                    <span class="history-title">๐‘ฅ เธเธนเนเน€เธฅเนเธ</span>
                     <span class="history-count" id="playerCount">0</span>
                 </div>
                 <div class="player-list" id="playerList">
@@ -1145,7 +1144,7 @@
             <!-- History Panel -->
             <div class="history-panel">
                 <div class="history-header">
-                    <span class="history-title">📋 ประวัติการประกาศ</span>
+                    <span class="history-title">๐“ เธเธฃเธฐเธงเธฑเธ•เธดเธเธฒเธฃเธเธฃเธฐเธเธฒเธจ</span>
                     <span class="history-count" id="historyCount">0 / 50</span>
                 </div>
                 <div class="history-numbers" id="historyNumbers">
@@ -1161,18 +1160,18 @@
     <!-- BINGO Celebration Overlay -->
     <div class="bingo-overlay" id="bingoOverlay">
         <div class="bingo-text">BINGO!</div>
-        <div class="bingo-subtitle">🎊 ยินดีด้วย! มีผู้ชนะ! 🎊</div>
-        <button class="bingo-close-btn" id="bingoCloseBtn">ปิด</button>
+        <div class="bingo-subtitle">๐ เธขเธดเธเธ”เธตเธ”เนเธงเธข! เธกเธตเธเธนเนเธเธเธฐ! ๐</div>
+        <button class="bingo-close-btn" id="bingoCloseBtn">เธเธดเธ”</button>
     </div>
 
     <!-- Custom Modal -->
     <div class="modal-overlay" id="resetModal">
         <div class="modal-box">
-            <div class="modal-title">🔄 รีเซ็ตเกม</div>
-            <div class="modal-message">ต้องการรีเซ็ตและเริ่มเกมใหม่หรือไม่?</div>
+            <div class="modal-title">๐” เธฃเธตเน€เธเนเธ•เน€เธเธก</div>
+            <div class="modal-message">เธ•เนเธญเธเธเธฒเธฃเธฃเธตเน€เธเนเธ•เนเธฅเธฐเน€เธฃเธดเนเธกเน€เธเธกเนเธซเธกเนเธซเธฃเธทเธญเนเธกเน?</div>
             <div class="modal-buttons">
-                <button class="modal-btn modal-btn-cancel" id="modalCancel">ยกเลิก</button>
-                <button class="modal-btn modal-btn-confirm" id="modalConfirm">ตกลง</button>
+                <button class="modal-btn modal-btn-cancel" id="modalCancel">เธขเธเน€เธฅเธดเธ</button>
+                <button class="modal-btn modal-btn-confirm" id="modalConfirm">เธ•เธเธฅเธ</button>
             </div>
         </div>
     </div>
@@ -1180,13 +1179,13 @@
     <!-- QR Code Modal -->
     <div class="modal-overlay" id="qrModal">
         <div class="modal-box" style="max-width: 90vw;">
-            <div class="modal-title" style="font-size: 2.5rem;">📱 สแกนเพื่อเข้าร่วมเกม</div>
+            <div class="modal-title" style="font-size: 2.5rem;">๐“ฑ เธชเนเธเธเน€เธเธทเนเธญเน€เธเนเธฒเธฃเนเธงเธกเน€เธเธก</div>
             <div class="qr-image" id="qrImage">
                 <!-- QR Code here -->
             </div>
             <div class="qr-url" id="qrUrl">Loading...</div>
             <div class="modal-buttons">
-                <button class="modal-btn modal-btn-cancel" id="qrCloseBtn">ปิด</button>
+                <button class="modal-btn modal-btn-cancel" id="qrCloseBtn">เธเธดเธ”</button>
             </div>
         </div>
     </div>
@@ -1194,23 +1193,23 @@
     <!-- Help Modal -->
     <div class="modal-overlay" id="helpModal">
         <div class="modal-box" style="max-width: 1000px;">
-            <div class="modal-title">🏆 วิธีชนะเกม BINGO 🏆</div>
+            <div class="modal-title">๐ เธงเธดเธเธตเธเธเธฐเน€เธเธก BINGO ๐</div>
             <div class="help-grid">
                 <div class="help-item">
                     <img src="public/win_row.svg" class="help-img" alt="Row Win">
-                    <span>แนวนอน (Row)</span>
+                    <span>เนเธเธงเธเธญเธ (Row)</span>
                 </div>
                 <div class="help-item">
                     <img src="public/win_col.svg" class="help-img" alt="Column Win">
-                    <span>แนวตั้ง (Column)</span>
+                    <span>เนเธเธงเธ•เธฑเนเธ (Column)</span>
                 </div>
                 <div class="help-item">
                     <img src="public/win_diag.svg" class="help-img" alt="Diagonal Win">
-                    <span>แนวทแยง (Diagonal)</span>
+                    <span>เนเธเธงเธ—เนเธขเธ (Diagonal)</span>
                 </div>
             </div>
             <div class="modal-buttons" style="margin-top: 30px;">
-                <button class="modal-btn modal-btn-confirm" id="helpCloseBtn">เข้าใจแล้ว</button>
+                <button class="modal-btn modal-btn-confirm" id="helpCloseBtn">เน€เธเนเธฒเนเธเนเธฅเนเธง</button>
             </div>
         </div>
     </div>
@@ -1388,7 +1387,7 @@
 
         // Create Falling Stars
         function createBingoStars() {
-            const starEmojis = ['⭐', '🌟', '✨', '💫', '🎉', '🎊', '🏆', '🥇'];
+            const starEmojis = ['โญ', '๐', 'โจ', '๐’ซ', '๐', '๐', '๐', '๐ฅ'];
 
             for (let i = 0; i < 50; i++) {
                 setTimeout(() => {
@@ -1485,7 +1484,7 @@
         function callNumber(num) {
             if (state.calledNumbers.includes(num)) {
                 playError();
-                showToast(`เลข ${num} ถูกประกาศแล้ว!`);
+                showToast(`เน€เธฅเธ ${num} เธ–เธนเธเธเธฃเธฐเธเธฒเธจเนเธฅเนเธง!`);
                 return;
             }
 
@@ -1513,7 +1512,7 @@
             createConfetti();
 
             // Show toast
-            showToast(`🎉 ประกาศเลข ${num}!`);
+            showToast(`๐ เธเธฃเธฐเธเธฒเธจเน€เธฅเธ ${num}!`);
 
             // Play celebration for milestones
             if (state.calledNumbers.length % 10 === 0) {
@@ -1550,7 +1549,7 @@
                 // Update history
                 updateHistory();
 
-                showToast(`ยกเลิกเลข ${num}`);
+                showToast(`เธขเธเน€เธฅเธดเธเน€เธฅเธ ${num}`);
             }
         }
 
@@ -1653,14 +1652,14 @@
             initAudio();
             soundEnabled = !soundEnabled;
             if (soundEnabled) {
-                soundBtn.innerHTML = '<span>🔊</span> เสียง';
+                soundBtn.innerHTML = '<span>๐”</span> เน€เธชเธตเธขเธ';
                 soundBtn.classList.remove('muted');
                 playDing();
-                showToast('🔊 เปิดเสียงแล้ว');
+                showToast('๐” เน€เธเธดเธ”เน€เธชเธตเธขเธเนเธฅเนเธง');
             } else {
-                soundBtn.innerHTML = '<span>🔇</span> ปิดเสียง';
+                soundBtn.innerHTML = '<span>๐”</span> เธเธดเธ”เน€เธชเธตเธขเธ';
                 soundBtn.classList.add('muted');
-                showToast('🔇 ปิดเสียงแล้ว');
+                showToast('๐” เธเธดเธ”เน€เธชเธตเธขเธเนเธฅเนเธง');
             }
         });
 
@@ -1674,7 +1673,7 @@
 
             const titleElement = bingoOverlay.querySelector('h2');
             if (winnerName) {
-                titleElement.innerHTML = `ยินดีด้วย! <br> <span style="font-size: 0.7em; color: var(--gold);">${winnerName}</span><br>BINGO!`;
+                titleElement.innerHTML = `เธขเธดเธเธ”เธตเธ”เนเธงเธข! <br> <span style="font-size: 0.7em; color: var(--gold);">${winnerName}</span><br>BINGO!`;
             } else {
                 titleElement.textContent = 'BINGO!';
             }
@@ -1701,7 +1700,7 @@
                 numberInput.focus();
             } else {
                 playError();
-                showToast('กรุณากรอกเลข 1-50');
+                showToast('เธเธฃเธธเธ“เธฒเธเธฃเธญเธเน€เธฅเธ 1-50');
             }
         });
 
@@ -1720,7 +1719,7 @@
                 uncallNumber(lastNum);
             } else {
                 playError();
-                showToast('ไม่มีเลขให้ยกเลิก');
+                showToast('เนเธกเนเธกเธตเน€เธฅเธเนเธซเนเธขเธเน€เธฅเธดเธ');
             }
         });
 
@@ -1730,7 +1729,7 @@
             playDing();
             if (!document.fullscreenElement) {
                 document.documentElement.requestFullscreen().catch(err => {
-                    showToast('ไม่สามารถเข้าโหมดเต็มจอได้');
+                    showToast('เนเธกเนเธชเธฒเธกเธฒเธฃเธ–เน€เธเนเธฒเนเธซเธกเธ”เน€เธ•เนเธกเธเธญเนเธ”เน');
                 });
             } else {
                 document.exitFullscreen();
@@ -1740,9 +1739,9 @@
         // Update fullscreen button text
         document.addEventListener('fullscreenchange', () => {
             if (document.fullscreenElement) {
-                fullscreenBtn.innerHTML = '<span>🔲</span> ออกจากเต็มจอ';
+                fullscreenBtn.innerHTML = '<span>๐”ฒ</span> เธญเธญเธเธเธฒเธเน€เธ•เนเธกเธเธญ';
             } else {
-                fullscreenBtn.innerHTML = '<span>🔳</span> เต็มจอ';
+                fullscreenBtn.innerHTML = '<span>๐”ณ</span> เน€เธ•เนเธกเธเธญ';
             }
         });
 
@@ -1751,7 +1750,7 @@
             initAudio();
             if (state.calledNumbers.length === 0) {
                 playError();
-                showToast('ยังไม่มีเลขที่ประกาศ');
+                showToast('เธขเธฑเธเนเธกเนเธกเธตเน€เธฅเธเธ—เธตเนเธเธฃเธฐเธเธฒเธจ');
                 return;
             }
             // Show custom modal
@@ -1779,7 +1778,7 @@
             // Reset history
             updateHistory();
 
-            showToast('🔄 รีเซ็ตเรียบร้อย!');
+            showToast('๐” เธฃเธตเน€เธเนเธ•เน€เธฃเธตเธขเธเธฃเนเธญเธข!');
         });
 
         // ===== Network State =====
@@ -1805,7 +1804,7 @@
             ws.onopen = () => {
                 console.log('Connected to Server');
                 ws.send(JSON.stringify({ type: 'host_connect', payload: {} }));
-                showToast('🟢 เชื่อมต่อ Server แล้ว');
+                showToast('๐ข เน€เธเธทเนเธญเธกเธ•เนเธญ Server เนเธฅเนเธง');
             };
 
             ws.onmessage = (event) => {
@@ -1814,7 +1813,7 @@
             };
 
             ws.onclose = () => {
-                showToast('🔴 ตัดการเชื่อมต่อ Server');
+                showToast('๐”ด เธ•เธฑเธ”เธเธฒเธฃเน€เธเธทเนเธญเธกเธ•เนเธญ Server');
                 setTimeout(connectServer, 5000); // Reconnect
             };
         }
@@ -1831,7 +1830,7 @@
                     updatePlayerList(data.payload.players);
                     break;
                 case 'player_joined':
-                    showToast(`👤 ${data.payload.name} เข้าร่วมเกม`);
+                    showToast(`๐‘ค ${data.payload.name} เน€เธเนเธฒเธฃเนเธงเธกเน€เธเธก`);
                     // We need to request full list or add one. For simplicity host asks server or server sends full list.
                     // Actually server sent single join. We should have a player store.
                     addPlayerToUI({ id: data.payload.id, name: data.payload.name, bingoCount: 0 });
@@ -1840,7 +1839,7 @@
                     removePlayerFromUI(data.payload.id);
                     break;
                 case 'player_won':
-                    showToast(`🏆 ${data.payload.name} Bingo!`);
+                    showToast(`๐ ${data.payload.name} Bingo!`);
                     showBingoCelebration(data.payload.name);
                     highlightWinner(data.payload.name);
                     playBingoWin();
@@ -1905,7 +1904,7 @@
             // Check if already called locally to avoid spam
             if (state.calledNumbers.includes(num)) {
                 playError();
-                showToast(`เลข ${num} ถูกประกาศแล้ว!`);
+                showToast(`เน€เธฅเธ ${num} เธ–เธนเธเธเธฃเธฐเธเธฒเธจเนเธฅเนเธง!`);
                 return;
             }
 
@@ -1984,7 +1983,7 @@
                 item.querySelector('.badge').textContent = 'Playing';
             });
 
-            showToast('🔄 รีเซ็ตเรียบร้อย!');
+            showToast('๐” เธฃเธตเน€เธเนเธ•เน€เธฃเธตเธขเธเธฃเนเธญเธข!');
         }
 
 
@@ -2034,13 +2033,13 @@
             if (autoDrawInterval) {
                 clearInterval(autoDrawInterval);
                 autoDrawInterval = null;
-                autoDrawBtn.innerHTML = '<span>🎲</span> สุ่มเลข';
+                autoDrawBtn.innerHTML = '<span>๐ฒ</span> เธชเธธเนเธกเน€เธฅเธ';
                 autoDrawBtn.classList.remove('btn-danger');
-                showToast('หยุดสุ่มเลข');
+                showToast('เธซเธขเธธเธ”เธชเธธเนเธกเน€เธฅเธ');
             } else {
-                autoDrawBtn.innerHTML = '<span>⏹️</span> หยุดสุ่ม';
+                autoDrawBtn.innerHTML = '<span>โน๏ธ</span> เธซเธขเธธเธ”เธชเธธเนเธก';
                 autoDrawBtn.classList.add('btn-danger'); // Make it red
-                showToast('เริ่มสุ่มเลขทุก 3 วินาที');
+                showToast('เน€เธฃเธดเนเธกเธชเธธเนเธกเน€เธฅเธเธ—เธธเธ 3 เธงเธดเธเธฒเธ—เธต');
 
                 autoDrawInterval = setInterval(() => {
                     // Find a number not yet called
@@ -2052,7 +2051,7 @@
                     if (available.length === 0) {
                         clearInterval(autoDrawInterval);
                         autoDrawInterval = null;
-                        autoDrawBtn.innerHTML = '<span>🎲</span> สุ่มเลข';
+                        autoDrawBtn.innerHTML = '<span>๐ฒ</span> เธชเธธเนเธกเน€เธฅเธ';
                         return;
                     }
 
@@ -2100,1548 +2099,3 @@
     </script>
 </body>
 
-=======
-<!DOCTYPE html>
-<html lang="th">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🎱 BINGO Board - ประกาศเลขบิงโก</title>
-    <style>
-        /* ===== CSS Variables ===== */
-        :root {
-            --bg-gradient-1: #0f0c29;
-            --bg-gradient-2: #302b63;
-            --bg-gradient-3: #24243e;
-            --gold: #FFD700;
-            --gold-glow: rgba(255, 215, 0, 0.6);
-            --number-bg: #ffffff;
-            --number-text: #1a1a2e;
-            --called-bg: linear-gradient(135deg, #FFD700, #FFA500);
-            --latest-bg: linear-gradient(135deg, #ff416c, #ff4b2b);
-            --button-gradient: linear-gradient(135deg, #667eea, #764ba2);
-            --button-hover: linear-gradient(135deg, #764ba2, #667eea);
-            --panel-bg: rgba(255, 255, 255, 0.1);
-            --text-light: #ffffff;
-            --text-muted: rgba(255, 255, 255, 0.7);
-        }
-
-        /* ===== Reset & Base ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html,
-        body {
-            height: 100%;
-            overflow: hidden;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, var(--bg-gradient-1), var(--bg-gradient-2), var(--bg-gradient-3));
-            color: var(--text-light);
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* ===== Header ===== */
-        .header {
-            padding: 15px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .logo {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-
-        .logo-icon {
-            font-size: 2.5rem;
-            animation: bounce 2s infinite;
-        }
-
-        @keyframes bounce {
-
-            0%,
-            100% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-
-        .logo h1 {
-            font-size: 2rem;
-            font-weight: 700;
-            background: linear-gradient(135deg, var(--gold), #FFA500);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: 0 0 30px var(--gold-glow);
-        }
-
-        /* ===== Controls ===== */
-        .controls {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            /* Reduced from 15px */
-            flex-wrap: nowrap;
-            /* Prevent wrapping */
-        }
-
-        .input-group {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 5px 12px;
-            /* Reduced padding */
-            border-radius: 50px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .input-group label {
-            font-size: 0.9rem;
-            color: var(--text-muted);
-            white-space: nowrap;
-        }
-
-        .input-group input {
-            width: 70px;
-            /* Reduced width */
-            padding: 8px 10px;
-            /* Reduced padding */
-            font-size: 1.1rem;
-            /* Slightly smaller */
-            font-weight: bold;
-            text-align: center;
-            border: none;
-            border-radius: 25px;
-            background: var(--number-bg);
-            color: var(--number-text);
-            outline: none;
-            transition: all 0.3s ease;
-        }
-
-        .input-group input:focus {
-            box-shadow: 0 0 20px var(--gold-glow);
-            transform: scale(1.05);
-        }
-
-        .btn {
-            padding: 10px 20px;
-            /* Reduced from 12px 25px */
-            font-size: 0.95rem;
-            /* Reduced from 1rem */
-            font-weight: 600;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            /* Reduced gap */
-            white-space: nowrap;
-            /* Prevent text wrapping */
-        }
-
-        .btn-primary {
-            background: var(--button-gradient);
-            color: white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
-        }
-
-        .btn-primary:hover {
-            background: var(--button-hover);
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        }
-
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px);
-        }
-
-        .btn-danger {
-            background: linear-gradient(135deg, #ff416c, #ff4b2b);
-            color: white;
-        }
-
-        .btn-danger:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
-        }
-
-        .btn-sound {
-            background: linear-gradient(135deg, #11998e, #38ef7d);
-            color: white;
-        }
-
-        .btn-sound.muted {
-            background: linear-gradient(135deg, #636363, #a2a2a2);
-        }
-
-        /* ===== Main Content ===== */
-        .main-content {
-            flex: 1;
-            display: flex;
-            padding: 20px 30px;
-            gap: 30px;
-            overflow: hidden;
-        }
-
-        /* ===== Bingo Grid ===== */
-        .grid-container {
-            flex: 0 0 60%;
-            display: flex;
-            flex-direction: column;
-            background: var(--panel-bg);
-            border-radius: 20px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .bingo-grid {
-            flex: 1;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            grid-template-rows: repeat(10, 1fr);
-            gap: 8px;
-            padding: 10px;
-        }
-
-        .number-cell {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: var(--number-bg);
-            border-radius: 12px;
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: var(--number-text);
-            cursor: pointer;
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .number-cell::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: left 0.5s ease;
-        }
-
-        .number-cell:hover {
-            transform: scale(1.1) rotate(3deg);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-            z-index: 10;
-        }
-
-        .number-cell:hover::before {
-            left: 100%;
-        }
-
-        .number-cell.called {
-            background: var(--called-bg);
-            color: #1a1a2e;
-            box-shadow: 0 0 30px var(--gold-glow), 0 4px 15px rgba(0, 0, 0, 0.3);
-            animation: pulse 2s infinite;
-        }
-
-        .number-cell.just-called {
-            animation: celebrate 0.6s ease-out;
-        }
-
-        @keyframes pulse {
-
-            0%,
-            100% {
-                box-shadow: 0 0 20px var(--gold-glow), 0 4px 15px rgba(0, 0, 0, 0.3);
-            }
-
-            50% {
-                box-shadow: 0 0 40px var(--gold-glow), 0 4px 15px rgba(0, 0, 0, 0.3);
-            }
-        }
-
-        @keyframes celebrate {
-            0% {
-                transform: scale(1);
-            }
-
-            25% {
-                transform: scale(1.3) rotate(-10deg);
-            }
-
-            50% {
-                transform: scale(1.2) rotate(10deg);
-            }
-
-            75% {
-                transform: scale(1.25) rotate(-5deg);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        /* ===== Right Panel ===== */
-        .right-panel {
-            flex: 0 0 38%;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        /* ===== Latest Number Display ===== */
-        .latest-number-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: var(--panel-bg);
-            border-radius: 20px;
-            padding: 30px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .latest-number-container::before {
-            content: '';
-            position: absolute;
-            width: 200%;
-            height: 200%;
-            background: conic-gradient(from 0deg, transparent, var(--gold-glow), transparent, var(--gold-glow), transparent);
-            animation: rotate 4s linear infinite;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .latest-number-container.active::before {
-            opacity: 0.3;
-        }
-
-        @keyframes rotate {
-            100% {
-                transform: rotate(360deg);
-            }
-        }
-
-        .latest-label {
-            font-size: 1.2rem;
-            color: var(--text-muted);
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            z-index: 1;
-        }
-
-        .latest-number {
-            font-size: 12rem;
-            font-weight: 900;
-            background: var(--latest-bg);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-shadow: none;
-            filter: drop-shadow(0 0 30px rgba(255, 65, 108, 0.5));
-            z-index: 1;
-            transition: all 0.3s ease;
-            line-height: 1;
-        }
-
-        .latest-number.animate {
-            animation: numberPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        @keyframes numberPop {
-            0% {
-                transform: scale(0) rotate(-180deg);
-                opacity: 0;
-            }
-
-            50% {
-                transform: scale(1.2) rotate(10deg);
-            }
-
-            100% {
-                transform: scale(1) rotate(0deg);
-                opacity: 1;
-            }
-        }
-
-        .latest-number.empty {
-            font-size: 3rem;
-            color: var(--text-muted);
-            -webkit-text-fill-color: var(--text-muted);
-            filter: none;
-        }
-
-        /* ===== History Panel ===== */
-        .history-panel {
-            background: var(--panel-bg);
-            border-radius: 20px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            max-height: 200px;
-        }
-
-        .history-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .history-title {
-            font-size: 1rem;
-            color: var(--text-muted);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .history-count {
-            background: var(--button-gradient);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: bold;
-        }
-
-        .history-numbers {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            max-height: 100px;
-            overflow-y: auto;
-        }
-
-        .history-numbers::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .history-numbers::-webkit-scrollbar-track {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 3px;
-        }
-
-        .history-numbers::-webkit-scrollbar-thumb {
-            background: var(--gold);
-            border-radius: 3px;
-        }
-
-        .history-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 40px;
-            height: 40px;
-            background: var(--called-bg);
-            border-radius: 10px;
-            font-weight: bold;
-            color: var(--number-text);
-            font-size: 0.9rem;
-            animation: fadeIn 0.3s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: scale(0.5);
-            }
-
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
-        }
-
-        /* ===== Confetti ===== */
-        .confetti {
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            pointer-events: none;
-            z-index: 9999;
-        }
-
-        /* ===== Fullscreen Styles ===== */
-        :fullscreen .header {
-            padding: 20px 40px;
-        }
-
-        :fullscreen .logo h1 {
-            font-size: 2.5rem;
-        }
-
-        :fullscreen .number-cell {
-            font-size: 2rem;
-        }
-
-        :fullscreen .latest-number {
-            font-size: 16rem;
-        }
-
-        /* ===== Responsive ===== */
-        @media (max-width: 1200px) {
-            .main-content {
-                flex-direction: column;
-            }
-
-            .grid-container,
-            .right-panel {
-                flex: none;
-            }
-
-            .latest-number {
-                font-size: 8rem;
-            }
-        }
-
-        /* ===== Animations for buttons ===== */
-        .btn:active {
-            transform: scale(0.95);
-        }
-
-        /* ===== Toast Notification ===== */
-        .toast {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%) translateY(100px);
-            background: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 1rem;
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            z-index: 10000;
-        }
-
-        .toast.show {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
-
-        /* ===== Sparkle Effect ===== */
-        .sparkle {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: radial-gradient(circle, var(--gold) 0%, transparent 70%);
-            border-radius: 50%;
-            pointer-events: none;
-            animation: sparkle 1s ease-out forwards;
-        }
-
-        @keyframes sparkle {
-            0% {
-                transform: scale(0);
-                opacity: 1;
-            }
-
-            100% {
-                transform: scale(2);
-                opacity: 0;
-            }
-        }
-
-        /* ===== Custom Modal ===== */
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 20000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.3s ease;
-            backdrop-filter: blur(5px);
-        }
-
-        .modal-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .modal-box {
-            background: linear-gradient(135deg, #1a1a2e, #16213e);
-            border-radius: 20px;
-            padding: 30px 40px;
-            text-align: center;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transform: scale(0.8);
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            max-width: 400px;
-        }
-
-        .modal-overlay.show .modal-box {
-            transform: scale(1);
-        }
-
-        .modal-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: var(--gold);
-        }
-
-        .modal-message {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 25px;
-        }
-
-        .modal-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-
-        .modal-btn {
-            padding: 12px 30px;
-            font-size: 1rem;
-            font-weight: 600;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .modal-btn-confirm {
-            background: linear-gradient(135deg, #ff416c, #ff4b2b);
-            color: white;
-        }
-
-        .modal-btn-confirm:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(255, 65, 108, 0.5);
-        }
-
-        .modal-btn-cancel {
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-
-        .modal-btn-cancel:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px);
-        }
-
-        /* ===== BINGO Button ===== */
-        .btn-bingo {
-            background: linear-gradient(135deg, #f093fb, #f5576c, #4facfe);
-            background-size: 200% 200%;
-            animation: gradientShift 3s ease infinite;
-            color: white;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            padding: 15px 35px;
-            box-shadow: 0 5px 25px rgba(245, 87, 108, 0.5);
-        }
-
-        @keyframes gradientShift {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        .btn-bingo:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 10px 40px rgba(245, 87, 108, 0.7);
-        }
-
-        /* ===== BINGO Celebration Overlay ===== */
-        .bingo-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 30000;
-            opacity: 0;
-            visibility: hidden;
-            transition: all 0.5s ease;
-        }
-
-        .bingo-overlay.show {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .bingo-text {
-            font-size: 15rem;
-            font-weight: 900;
-            background: linear-gradient(135deg, #FFD700, #FFA500, #FF6B6B, #f093fb, #4facfe);
-            background-size: 400% 400%;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: rainbowText 2s ease infinite, bingoAppear 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            text-shadow: none;
-            filter: drop-shadow(0 0 50px rgba(255, 215, 0, 0.8));
-            letter-spacing: 20px;
-        }
-
-        @keyframes rainbowText {
-            0% {
-                background-position: 0% 50%;
-            }
-
-            50% {
-                background-position: 100% 50%;
-            }
-
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
-        @keyframes bingoAppear {
-            0% {
-                transform: scale(0) rotate(-20deg);
-                opacity: 0;
-            }
-
-            50% {
-                transform: scale(1.3) rotate(10deg);
-            }
-
-            70% {
-                transform: scale(0.9) rotate(-5deg);
-            }
-
-            100% {
-                transform: scale(1) rotate(0deg);
-                opacity: 1;
-            }
-        }
-
-        .bingo-subtitle {
-            font-size: 2rem;
-            color: white;
-            margin-top: 20px;
-            animation: fadeInUp 1s ease 0.5s both;
-        }
-
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .bingo-close-btn {
-            margin-top: 40px;
-            padding: 15px 50px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            color: white;
-            border: none;
-            border-radius: 50px;
-            cursor: pointer;
-            animation: fadeInUp 1s ease 0.8s both;
-            transition: all 0.3s ease;
-        }
-
-        .bingo-close-btn:hover {
-            transform: scale(1.1);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.5);
-        }
-
-        /* ===== Fireworks Effect ===== */
-        .firework {
-            position: fixed;
-            pointer-events: none;
-            z-index: 30001;
-        }
-
-        .firework-particle {
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            animation: fireworkExplode 1.5s ease-out forwards;
-        }
-
-        @keyframes fireworkExplode {
-            0% {
-                transform: translate(0, 0) scale(1);
-                opacity: 1;
-            }
-
-            100% {
-                transform: translate(var(--tx), var(--ty)) scale(0);
-                opacity: 0;
-            }
-        }
-
-        /* ===== Stars Effect ===== */
-        .star {
-            position: fixed;
-            pointer-events: none;
-            z-index: 30001;
-            font-size: 2rem;
-            animation: starFall 2s ease-out forwards;
-        }
-
-        @keyframes starFall {
-            0% {
-                transform: translateY(0) rotate(0deg) scale(1);
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(100vh) rotate(720deg) scale(0);
-                opacity: 0;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <!-- Header -->
-    <header class="header">
-        <div class="logo">
-            <span class="logo-icon">🎱</span>
-            <h1>BINGO BOARD</h1>
-        </div>
-        <div class="controls">
-            <div class="input-group">
-                <label>กรอกเลข:</label>
-                <input type="number" id="numberInput" min="1" max="50" placeholder="1-50" autocomplete="off">
-                <button class="btn btn-primary" id="announceBtn">
-                    <span>📢</span> ประกาศ
-                </button>
-            </div>
-            <button class="btn btn-sound" id="soundBtn">
-                <span>🔊</span> เสียง
-            </button>
-            <button class="btn btn-bingo" id="bingoBtn">
-                <span>🎉</span> BINGO!
-            </button>
-            <button class="btn btn-secondary" id="undoBtn">
-                <span>↩️</span> ยกเลิก
-            </button>
-            <button class="btn btn-secondary" id="fullscreenBtn">
-                <span>🔳</span> เต็มจอ
-            </button>
-            <button class="btn btn-danger" id="resetBtn">
-                <span>🔄</span> รีเซ็ต
-            </button>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="main-content">
-        <!-- Bingo Grid -->
-        <div class="grid-container">
-            <div class="bingo-grid" id="bingoGrid">
-                <!-- Numbers will be generated by JavaScript -->
-            </div>
-        </div>
-
-        <!-- Right Panel -->
-        <div class="right-panel">
-            <!-- Latest Number Display -->
-            <div class="latest-number-container" id="latestContainer">
-                <div class="latest-label">เลขล่าสุด</div>
-                <div class="latest-number empty" id="latestNumber">?</div>
-            </div>
-
-            <!-- History Panel -->
-            <div class="history-panel">
-                <div class="history-header">
-                    <span class="history-title">📋 ประวัติการประกาศ</span>
-                    <span class="history-count" id="historyCount">0 / 50</span>
-                </div>
-                <div class="history-numbers" id="historyNumbers">
-                    <!-- History items will be added here -->
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Toast Notification -->
-    <div class="toast" id="toast"></div>
-
-    <!-- BINGO Celebration Overlay -->
-    <div class="bingo-overlay" id="bingoOverlay">
-        <div class="bingo-text">BINGO!</div>
-        <div class="bingo-subtitle">🎊 ยินดีด้วย! มีผู้ชนะ! 🎊</div>
-        <button class="bingo-close-btn" id="bingoCloseBtn">ปิด</button>
-    </div>
-
-    <!-- Custom Modal -->
-    <div class="modal-overlay" id="resetModal">
-        <div class="modal-box">
-            <div class="modal-title">🔄 รีเซ็ตเกม</div>
-            <div class="modal-message">ต้องการรีเซ็ตและเริ่มเกมใหม่หรือไม่?</div>
-            <div class="modal-buttons">
-                <button class="modal-btn modal-btn-cancel" id="modalCancel">ยกเลิก</button>
-                <button class="modal-btn modal-btn-confirm" id="modalConfirm">ตกลง</button>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        // ===== Audio Context & Sound System =====
-        let audioCtx = null;
-        let soundEnabled = true;
-
-        function initAudio() {
-            if (!audioCtx) {
-                audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-            }
-            if (audioCtx.state === 'suspended') {
-                audioCtx.resume();
-            }
-        }
-
-        // Play a note with specified frequency and duration
-        function playNote(frequency, duration, type = 'sine', volume = 0.3) {
-            if (!soundEnabled || !audioCtx) return;
-
-            const oscillator = audioCtx.createOscillator();
-            const gainNode = audioCtx.createGain();
-
-            oscillator.connect(gainNode);
-            gainNode.connect(audioCtx.destination);
-
-            oscillator.frequency.value = frequency;
-            oscillator.type = type;
-
-            gainNode.gain.setValueAtTime(volume, audioCtx.currentTime);
-            gainNode.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + duration);
-
-            oscillator.start(audioCtx.currentTime);
-            oscillator.stop(audioCtx.currentTime + duration);
-        }
-
-        // Fanfare sound for announcing numbers
-        function playFanfare() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            const notes = [
-                { freq: 523.25, delay: 0, duration: 0.15 },      // C5
-                { freq: 659.25, delay: 0.1, duration: 0.15 },    // E5
-                { freq: 783.99, delay: 0.2, duration: 0.15 },    // G5
-                { freq: 1046.50, delay: 0.3, duration: 0.4 },    // C6
-            ];
-
-            notes.forEach(note => {
-                setTimeout(() => {
-                    playNote(note.freq, note.duration, 'triangle', 0.4);
-                }, note.delay * 1000);
-            });
-        }
-
-        // Ding sound for click
-        function playDing() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            playNote(880, 0.3, 'sine', 0.2);
-            setTimeout(() => playNote(1108.73, 0.2, 'sine', 0.15), 50);
-        }
-
-        // Error sound
-        function playError() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            playNote(200, 0.2, 'sawtooth', 0.2);
-            setTimeout(() => playNote(150, 0.3, 'sawtooth', 0.2), 100);
-        }
-
-        // Undo sound
-        function playUndo() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            playNote(600, 0.1, 'sine', 0.2);
-            setTimeout(() => playNote(400, 0.2, 'sine', 0.2), 80);
-        }
-
-        // Reset sound
-        function playReset() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            const notes = [800, 600, 400, 300];
-            notes.forEach((freq, i) => {
-                setTimeout(() => playNote(freq, 0.15, 'triangle', 0.2), i * 80);
-            });
-        }
-
-        // Celebration sound (for special milestones)
-        function playCelebration() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            const melody = [
-                { freq: 523.25, delay: 0, duration: 0.1 },
-                { freq: 587.33, delay: 0.1, duration: 0.1 },
-                { freq: 659.25, delay: 0.2, duration: 0.1 },
-                { freq: 783.99, delay: 0.3, duration: 0.1 },
-                { freq: 880.00, delay: 0.4, duration: 0.1 },
-                { freq: 1046.50, delay: 0.5, duration: 0.3 },
-            ];
-
-            melody.forEach(note => {
-                setTimeout(() => {
-                    playNote(note.freq, note.duration, 'triangle', 0.3);
-                }, note.delay * 1000);
-            });
-        }
-
-        // BINGO Win Sound - Epic fanfare!
-        function playBingoWin() {
-            if (!soundEnabled) return;
-            initAudio();
-
-            // Epic winning melody
-            const winMelody = [
-                { freq: 523.25, delay: 0, duration: 0.15 },      // C5
-                { freq: 659.25, delay: 0.1, duration: 0.15 },    // E5
-                { freq: 783.99, delay: 0.2, duration: 0.15 },    // G5
-                { freq: 1046.50, delay: 0.3, duration: 0.2 },    // C6
-                { freq: 1318.51, delay: 0.5, duration: 0.15 },   // E6
-                { freq: 1567.98, delay: 0.6, duration: 0.15 },   // G6
-                { freq: 2093.00, delay: 0.7, duration: 0.5 },    // C7
-                { freq: 1567.98, delay: 1.0, duration: 0.15 },   // G6
-                { freq: 2093.00, delay: 1.1, duration: 0.6 },    // C7
-            ];
-
-            winMelody.forEach(note => {
-                setTimeout(() => {
-                    playNote(note.freq, note.duration, 'triangle', 0.5);
-                }, note.delay * 1000);
-            });
-        }
-
-        // Create Fireworks
-        function createFireworks() {
-            const colors = ['#FFD700', '#FF6B6B', '#4ECDC4', '#45B7D1', '#96E6A1', '#DDA0DD', '#f093fb', '#f5576c'];
-
-            for (let burst = 0; burst < 8; burst++) {
-                setTimeout(() => {
-                    const x = Math.random() * window.innerWidth;
-                    const y = Math.random() * (window.innerHeight * 0.6);
-
-                    const firework = document.createElement('div');
-                    firework.className = 'firework';
-                    firework.style.left = x + 'px';
-                    firework.style.top = y + 'px';
-                    document.body.appendChild(firework);
-
-                    // Create particles
-                    for (let i = 0; i < 20; i++) {
-                        const particle = document.createElement('div');
-                        particle.className = 'firework-particle';
-                        particle.style.background = colors[Math.floor(Math.random() * colors.length)];
-
-                        const angle = (i / 20) * Math.PI * 2;
-                        const distance = 80 + Math.random() * 60;
-                        particle.style.setProperty('--tx', Math.cos(angle) * distance + 'px');
-                        particle.style.setProperty('--ty', Math.sin(angle) * distance + 'px');
-
-                        firework.appendChild(particle);
-                    }
-
-                    setTimeout(() => firework.remove(), 1500);
-                }, burst * 200);
-            }
-        }
-
-        // Create Falling Stars
-        function createBingoStars() {
-            const starEmojis = ['⭐', '🌟', '✨', '💫', '🎉', '🎊', '🏆', '🥇'];
-
-            for (let i = 0; i < 50; i++) {
-                setTimeout(() => {
-                    const star = document.createElement('div');
-                    star.className = 'star';
-                    star.textContent = starEmojis[Math.floor(Math.random() * starEmojis.length)];
-                    star.style.left = Math.random() * window.innerWidth + 'px';
-                    star.style.top = -50 + 'px';
-                    star.style.fontSize = (1 + Math.random() * 2) + 'rem';
-                    star.style.animationDuration = (1.5 + Math.random() * 1.5) + 's';
-                    document.body.appendChild(star);
-
-                    setTimeout(() => star.remove(), 3000);
-                }, i * 60);
-            }
-        }
-
-        // Show BINGO Celebration
-        function showBingoCelebration() {
-            bingoOverlay.classList.add('show');
-            playBingoWin();
-            createFireworks();
-            createBingoStars();
-
-            // Continue fireworks
-            const fireworkInterval = setInterval(createFireworks, 1500);
-
-            // Stop fireworks after 5 seconds
-            setTimeout(() => clearInterval(fireworkInterval), 5000);
-        }
-
-        // ===== State =====
-        const state = {
-            calledNumbers: [],
-            lastNumber: null
-        };
-
-        // ===== DOM Elements =====
-        const bingoGrid = document.getElementById('bingoGrid');
-        const latestNumber = document.getElementById('latestNumber');
-        const latestContainer = document.getElementById('latestContainer');
-        const historyNumbers = document.getElementById('historyNumbers');
-        const historyCount = document.getElementById('historyCount');
-        const numberInput = document.getElementById('numberInput');
-        const announceBtn = document.getElementById('announceBtn');
-        const undoBtn = document.getElementById('undoBtn');
-        const fullscreenBtn = document.getElementById('fullscreenBtn');
-        const resetBtn = document.getElementById('resetBtn');
-        const soundBtn = document.getElementById('soundBtn');
-        const bingoBtn = document.getElementById('bingoBtn');
-        const bingoOverlay = document.getElementById('bingoOverlay');
-        const bingoCloseBtn = document.getElementById('bingoCloseBtn');
-        const toast = document.getElementById('toast');
-        const resetModal = document.getElementById('resetModal');
-        const modalConfirm = document.getElementById('modalConfirm');
-        const modalCancel = document.getElementById('modalCancel');
-
-        // ===== Initialize Grid =====
-        function initGrid() {
-            bingoGrid.innerHTML = '';
-
-            // Create 99 numbers arranged vertically (1-10 in first column, 11-20 in second, etc.)
-            for (let row = 0; row < 10; row++) {
-                for (let col = 0; col < 5; col++) {
-                    const num = col * 10 + row + 1;
-                    if (num > 50) continue; // Skip numbers above 50
-                    const cell = document.createElement('div');
-                    cell.className = 'number-cell';
-                    cell.dataset.number = num;
-                    cell.textContent = num.toString().padStart(2, '0');
-                    cell.addEventListener('click', () => {
-                        initAudio(); // Ensure audio is initialized on user interaction
-                        toggleNumber(num);
-                    });
-                    bingoGrid.appendChild(cell);
-                }
-            }
-        }
-
-        // ===== Toggle Number =====
-        function toggleNumber(num) {
-            const index = state.calledNumbers.indexOf(num);
-
-            if (index === -1) {
-                // Call the number
-                callNumber(num);
-            } else {
-                // Uncall the number
-                uncallNumber(num);
-            }
-        }
-
-        // ===== Call Number =====
-        function callNumber(num) {
-            if (state.calledNumbers.includes(num)) {
-                playError();
-                showToast(`เลข ${num} ถูกประกาศแล้ว!`);
-                return;
-            }
-
-            state.calledNumbers.push(num);
-            state.lastNumber = num;
-
-            // Play fanfare sound
-            playFanfare();
-
-            // Update grid cell
-            const cell = bingoGrid.querySelector(`[data-number="${num}"]`);
-            if (cell) {
-                cell.classList.add('called', 'just-called');
-                createSparkles(cell);
-                setTimeout(() => cell.classList.remove('just-called'), 600);
-            }
-
-            // Update latest number display
-            updateLatestNumber(num);
-
-            // Update history
-            updateHistory();
-
-            // Create confetti effect
-            createConfetti();
-
-            // Show toast
-            showToast(`🎉 ประกาศเลข ${num}!`);
-
-            // Play celebration for milestones
-            if (state.calledNumbers.length % 10 === 0) {
-                setTimeout(playCelebration, 500);
-            }
-        }
-
-        // ===== Uncall Number =====
-        function uncallNumber(num) {
-            const index = state.calledNumbers.indexOf(num);
-            if (index > -1) {
-                state.calledNumbers.splice(index, 1);
-
-                // Play undo sound
-                playUndo();
-
-                // Update grid cell
-                const cell = bingoGrid.querySelector(`[data-number="${num}"]`);
-                if (cell) {
-                    cell.classList.remove('called');
-                }
-
-                // Update latest number
-                if (state.calledNumbers.length > 0) {
-                    state.lastNumber = state.calledNumbers[state.calledNumbers.length - 1];
-                    updateLatestNumber(state.lastNumber);
-                } else {
-                    state.lastNumber = null;
-                    latestNumber.textContent = '?';
-                    latestNumber.classList.add('empty');
-                    latestContainer.classList.remove('active');
-                }
-
-                // Update history
-                updateHistory();
-
-                showToast(`ยกเลิกเลข ${num}`);
-            }
-        }
-
-        // ===== Update Latest Number Display =====
-        function updateLatestNumber(num) {
-            latestNumber.classList.remove('empty', 'animate');
-            latestContainer.classList.add('active');
-
-            // Force reflow for animation
-            void latestNumber.offsetWidth;
-
-            latestNumber.textContent = num.toString().padStart(2, '0');
-            latestNumber.classList.add('animate');
-        }
-
-        // ===== Update History =====
-        function updateHistory() {
-            historyNumbers.innerHTML = '';
-
-            // Show in reverse order (latest first)
-            [...state.calledNumbers].reverse().forEach(num => {
-                const item = document.createElement('div');
-                item.className = 'history-item';
-                item.textContent = num.toString().padStart(2, '0');
-                historyNumbers.appendChild(item);
-            });
-
-            historyCount.textContent = `${state.calledNumbers.length} / 50`;
-        }
-
-        // ===== Create Sparkles =====
-        function createSparkles(element) {
-            const rect = element.getBoundingClientRect();
-            for (let i = 0; i < 8; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.className = 'sparkle';
-                sparkle.style.left = rect.left + rect.width / 2 + (Math.random() - 0.5) * 60 + 'px';
-                sparkle.style.top = rect.top + rect.height / 2 + (Math.random() - 0.5) * 60 + 'px';
-                document.body.appendChild(sparkle);
-                setTimeout(() => sparkle.remove(), 1000);
-            }
-        }
-
-        // ===== Create Confetti =====
-        function createConfetti() {
-            const colors = ['#FFD700', '#FF6B6B', '#4ECDC4', '#45B7D1', '#96E6A1', '#DDA0DD'];
-
-            for (let i = 0; i < 30; i++) {
-                setTimeout(() => {
-                    const confetti = document.createElement('div');
-                    confetti.className = 'confetti';
-                    confetti.style.left = Math.random() * window.innerWidth + 'px';
-                    confetti.style.top = '-20px';
-                    confetti.style.background = colors[Math.floor(Math.random() * colors.length)];
-                    confetti.style.borderRadius = Math.random() > 0.5 ? '50%' : '0';
-                    confetti.style.width = Math.random() * 10 + 5 + 'px';
-                    confetti.style.height = confetti.style.width;
-
-                    document.body.appendChild(confetti);
-
-                    // Animate falling
-                    let posY = -20;
-                    let posX = parseFloat(confetti.style.left);
-                    let rotation = 0;
-                    let speedY = Math.random() * 3 + 2;
-                    let speedX = (Math.random() - 0.5) * 4;
-                    let rotationSpeed = (Math.random() - 0.5) * 10;
-
-                    const fall = () => {
-                        posY += speedY;
-                        posX += speedX;
-                        rotation += rotationSpeed;
-                        confetti.style.top = posY + 'px';
-                        confetti.style.left = posX + 'px';
-                        confetti.style.transform = `rotate(${rotation}deg)`;
-
-                        if (posY < window.innerHeight) {
-                            requestAnimationFrame(fall);
-                        } else {
-                            confetti.remove();
-                        }
-                    };
-
-                    requestAnimationFrame(fall);
-                }, i * 30);
-            }
-        }
-
-        // ===== Show Toast =====
-        function showToast(message) {
-            toast.textContent = message;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 2000);
-        }
-
-        // ===== Event Listeners =====
-
-        // Sound toggle button
-        soundBtn.addEventListener('click', () => {
-            initAudio();
-            soundEnabled = !soundEnabled;
-            if (soundEnabled) {
-                soundBtn.innerHTML = '<span>🔊</span> เสียง';
-                soundBtn.classList.remove('muted');
-                playDing();
-                showToast('🔊 เปิดเสียงแล้ว');
-            } else {
-                soundBtn.innerHTML = '<span>🔇</span> ปิดเสียง';
-                soundBtn.classList.add('muted');
-                showToast('🔇 ปิดเสียงแล้ว');
-            }
-        });
-
-        // BINGO button - Show celebration!
-        bingoBtn.addEventListener('click', () => {
-            initAudio();
-            showBingoCelebration();
-        });
-
-        // BINGO close button
-        bingoCloseBtn.addEventListener('click', () => {
-            bingoOverlay.classList.remove('show');
-            playDing();
-        });
-
-        // Close BINGO overlay when clicking outside
-        bingoOverlay.addEventListener('click', (e) => {
-            if (e.target === bingoOverlay) {
-                bingoOverlay.classList.remove('show');
-            }
-        });
-
-        // Announce button
-        announceBtn.addEventListener('click', () => {
-            initAudio();
-            const num = parseInt(numberInput.value);
-            if (num >= 1 && num <= 50) {
-                callNumber(num);
-                numberInput.value = '';
-                numberInput.focus();
-            } else {
-                playError();
-                showToast('กรุณากรอกเลข 1-50');
-            }
-        });
-
-        // Enter key on input
-        numberInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                announceBtn.click();
-            }
-        });
-
-        // Undo button
-        undoBtn.addEventListener('click', () => {
-            initAudio();
-            if (state.calledNumbers.length > 0) {
-                const lastNum = state.calledNumbers[state.calledNumbers.length - 1];
-                uncallNumber(lastNum);
-            } else {
-                playError();
-                showToast('ไม่มีเลขให้ยกเลิก');
-            }
-        });
-
-        // Fullscreen button
-        fullscreenBtn.addEventListener('click', () => {
-            initAudio();
-            playDing();
-            if (!document.fullscreenElement) {
-                document.documentElement.requestFullscreen().catch(err => {
-                    showToast('ไม่สามารถเข้าโหมดเต็มจอได้');
-                });
-            } else {
-                document.exitFullscreen();
-            }
-        });
-
-        // Update fullscreen button text
-        document.addEventListener('fullscreenchange', () => {
-            if (document.fullscreenElement) {
-                fullscreenBtn.innerHTML = '<span>🔲</span> ออกจากเต็มจอ';
-            } else {
-                fullscreenBtn.innerHTML = '<span>🔳</span> เต็มจอ';
-            }
-        });
-
-        // Reset button - show custom modal instead of confirm()
-        resetBtn.addEventListener('click', () => {
-            initAudio();
-            if (state.calledNumbers.length === 0) {
-                playError();
-                showToast('ยังไม่มีเลขที่ประกาศ');
-                return;
-            }
-            // Show custom modal
-            resetModal.classList.add('show');
-            playDing();
-        });
-
-        // Modal confirm button
-        modalConfirm.addEventListener('click', () => {
-            resetModal.classList.remove('show');
-            playReset();
-            state.calledNumbers = [];
-            state.lastNumber = null;
-
-            // Reset all cells
-            document.querySelectorAll('.number-cell').forEach(cell => {
-                cell.classList.remove('called', 'just-called');
-            });
-
-            // Reset latest number
-            latestNumber.textContent = '?';
-            latestNumber.classList.add('empty');
-            latestContainer.classList.remove('active');
-
-            // Reset history
-            updateHistory();
-
-            showToast('🔄 รีเซ็ตเรียบร้อย!');
-        });
-
-        // Modal cancel button
-        modalCancel.addEventListener('click', () => {
-            resetModal.classList.remove('show');
-            playDing();
-        });
-
-        // Close modal when clicking outside
-        resetModal.addEventListener('click', (e) => {
-            if (e.target === resetModal) {
-                resetModal.classList.remove('show');
-            }
-        });
-
-        // Keyboard shortcuts
-        document.addEventListener('keydown', (e) => {
-            // F11 for fullscreen (browser default)
-            if (e.key === 'Escape' && document.fullscreenElement) {
-                document.exitFullscreen();
-            }
-            // Ctrl+Z for undo
-            if (e.ctrlKey && e.key === 'z') {
-                e.preventDefault();
-                undoBtn.click();
-            }
-        });
-
-        // Initialize audio on first user interaction
-        document.addEventListener('click', initAudio, { once: true });
-        document.addEventListener('keydown', initAudio, { once: true });
-
-        // ===== Initialize =====
-        initGrid();
-        numberInput.focus();
-    </script>
-</body>
-
->>>>>>> 0cc05c8ed73eb0e1378bf54c8029dc53a3110419
-</html>
