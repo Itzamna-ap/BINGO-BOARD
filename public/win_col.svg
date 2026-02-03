@@ -1,0 +1,40 @@
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+    <rect width="150" height="150" fill="#24243e" rx="10" />
+    <g stroke="rgba(255,255,255,0.2)" stroke-width="1">
+        <!-- Cells -->
+        <!-- Row 1 -->
+        <rect x="5" y="5" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="33" y="5" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="61" y="5" width="26" height="26" fill="#ffff00" rx="4"/> <!-- WIN -->
+        <rect x="89" y="5" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="117" y="5" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+
+        <!-- Row 2 -->
+        <rect x="5" y="33" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="33" y="33" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="61" y="33" width="26" height="26" fill="#ffff00" rx="4"/> <!-- WIN -->
+        <rect x="89" y="33" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="117" y="33" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+
+        <!-- Row 3 -->
+        <rect x="5" y="61" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="33" y="61" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="61" y="61" width="26" height="26" fill="#ffff00" rx="4"/> <!-- WIN (Free) -->
+        <rect x="89" y="61" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="117" y="61" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+
+        <!-- Row 4 -->
+        <rect x="5" y="89" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="33" y="89" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="61" y="89" width="26" height="26" fill="#ffff00" rx="4"/> <!-- WIN -->
+        <rect x="89" y="89" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="117" y="89" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+
+        <!-- Row 5 -->
+        <rect x="5" y="117" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="33" y="117" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="61" y="117" width="26" height="26" fill="#ffff00" rx="4"/> <!-- WIN -->
+        <rect x="89" y="117" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+        <rect x="117" y="117" width="26" height="26" fill="rgba(255,255,255,0.1)" rx="4"/>
+    </g>
+</svg>
