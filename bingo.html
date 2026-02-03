@@ -378,30 +378,34 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 15px;
+            /* Reduced gap */
             min-width: 0;
-            /* Prevent flex overflow */
+            height: 100%;
+            /* Ensure it takes full height */
+            overflow: hidden;
+            /* Prevent spillover */
         }
 
         /* ===== Latest Number Display ===== */
         .latest-number-container {
-            flex: 1;
-            /* 50/50 Split */
+            flex: 2;
+            /* Give more space to number */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            /* Liquid Glass Effect */
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 10px;
-            /* Reduced padding */
             border: 1px solid rgba(255, 255, 255, 0.3);
             box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.2);
             position: relative;
             overflow: hidden;
+            min-height: 0;
+            /* Important for flex nesting */
         }
 
         /* Texture Image with Transparency */
@@ -443,57 +447,32 @@
         }
 
         .latest-label {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
+            /* Reduced size */
             color: var(--text-muted);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
+            /* Reduced margin */
             text-transform: uppercase;
             letter-spacing: 3px;
             z-index: 1;
         }
 
         .latest-number {
-            font-size: 35vh;
-            /* Responsive Size based on viewport height */
+            font-size: clamp(8rem, 25vh, 18rem);
+            /* Responsive clamp */
             font-weight: 900;
             background: var(--latest-bg);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             text-shadow: none;
-            /* White Outline & Strong Shadow */
-            -webkit-text-stroke: 6px #ffffff;
+            -webkit-text-stroke: 4px #ffffff;
+            /* Reduced stroke */
             paint-order: stroke fill;
-            filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.4));
+            filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.4));
             z-index: 1;
             transition: all 0.3s ease;
-            line-height: 0.9;
-        }
-
-        .latest-number.animate {
-            animation: numberPop 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-        }
-
-        @keyframes numberPop {
-            0% {
-                transform: scale(0) rotate(-180deg);
-                opacity: 0;
-            }
-
-            50% {
-                transform: scale(1.2) rotate(10deg);
-            }
-
-            100% {
-                transform: scale(1) rotate(0deg);
-                opacity: 1;
-            }
-        }
-
-        .latest-number.empty {
-            font-size: 3rem;
-            color: var(--text-muted);
-            -webkit-text-fill-color: var(--text-muted);
-            filter: none;
+            line-height: 1;
         }
 
         /* ===== History Panel ===== */
@@ -1072,12 +1051,15 @@
             backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.3);
             border-radius: 20px;
-            padding: 20px;
+            padding: 15px;
+            /* Reduced padding */
             display: flex;
             flex-direction: column;
             overflow: hidden;
-            margin-bottom: 20px;
-            max-height: 200px;
+            margin-bottom: 0px;
+            /* Remove margin, use gap instead */
+            min-height: 0;
+            /* Important */
         }
 
         .player-list {
